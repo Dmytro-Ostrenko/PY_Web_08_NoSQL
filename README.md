@@ -3,10 +3,10 @@
 ## <p align="center">Домашнє завдання #8</p>
 
 ### <p align="center">Основне завдання#1</p>
-### Перша частина
+
 ### Вихідні дані
 У нас є json файл з авторами та їх властивостями: дата та місце народження, короткий опис біографії. 
-Вміст файлу *`authors.json`*.
+Вміст файлу *`authors.json`*:
 
 ---
 [
@@ -25,6 +25,52 @@
 ]
 ---
 
+Також ми маємо наступний json файл із цитатами від цих авторів.
+Вміст файлу *`qoutes.json`*:
+
+---
+[
+  {
+    "tags": [
+      "change",
+      "deep-thoughts",
+      "thinking",
+      "world"
+    ],
+    "author": "Albert Einstein",
+    "quote": "“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”"
+  },
+  {
+    "tags": [
+      "inspirational",
+      "life",
+      "live",
+      "miracle",
+      "miracles"
+    ],
+    "author": "Albert Einstein",
+    "quote": "“There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.”"
+  },
+  {
+    "tags": [
+      "adulthood",
+      "success",
+      "value"
+    ],
+    "author": "Albert Einstein",
+    "quote": "“Try not to become a man of success. Rather become a man of value.”"
+  },
+  {
+    "tags": [
+      "humor",
+      "obvious",
+      "simile"
+    ],
+    "author": "Steve Martin",
+    "quote": "“A day without sunshine is like, you know, night.”"
+  }
+]
+---
 
 
 
