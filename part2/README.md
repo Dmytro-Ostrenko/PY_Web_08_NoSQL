@@ -12,8 +12,15 @@
 
 ### Порядок запуску:
 
-1. Встановлення RabbitMQ за допомогою Docker через команду:
-   ---
+1. Встановлення RabbitMQ за допомогою Docker через команду:   
+
    docker run -d --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3.11-management
    ---
-   
+2. Запуск *models.py*
+3. Запуск *producer.py* для створення контактів через faker
+4. Запуск concumer.py
+
+   Для перевірки: http://localhost:15672/   login-guest, pasword - guest.
+  
+
+
