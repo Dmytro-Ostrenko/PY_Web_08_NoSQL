@@ -15,7 +15,7 @@ def search_quotes(command):
             for quote in quotes:
                 print(f"{quote.author.fullname}: {quote.quote}")
         else:
-            print(f"No quotes found for author '{author_name}'.")
+            print(f"Для автора '{author_name}' цитат не знайдено .")
     elif command.startswith('tag:'):
         tag = command.split(':')[1].strip()
         quotes = Quote.objects(tags=tag)
@@ -27,12 +27,12 @@ def search_quotes(command):
         for quote in quotes:
             print(f"{quote.author.fullname}: {quote.quote}")
     else:
-        print("Invalid command format.")
+        print("Невірна команда")
 
 
 if __name__ == "__main__":
     while True:
-        command = input("Enter command (name: author_name, tag: tag_name, tags: tag1,tag2, exit to quit): ").strip()
+        command = input("Оберіть вашу команду (Можливі варіанти: name: author_name, tag: tag_name, tags: tag1,tag2, exit для завершення): ").strip()
         if command.lower() == 'exit':
             break
         search_quotes(command)
